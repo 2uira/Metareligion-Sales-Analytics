@@ -6,7 +6,8 @@ Metareligion is an archive-fashion resale business I've run since February 2023,
 1. Which channel actually protects margin once price tier is accounted for, and why?
 2. Which categories and price tiers should Metareligion source more of, based on profit, margin and resale speed?
 
-![Metareligion sales dashboard](MG%20Dashboard.png)
+![Average margin by platform](MG%20Margin%20by%20Platform.png)
+![Total profit by category](MG%20Profit%20by%20Category.png)
 
 ## Key findings
 
