@@ -27,11 +27,11 @@ Metareligion is an archive-fashion resale business I've run since February 2023,
 
 Before touching the numbers, I ran `.info()`, `.value_counts()` and `.describe()` to see what I was working with:
 
-- `Days to Sell` was stored as text ("5 Days"). I converted it to a number, and flagged "30+ Days" / "30 Days+" as censored instead of treating 30 as the real value.
+- `Days to Sell` was stored as text ("5 Days"). I converted it to a number, and flagged "30+ Days"/"30 Days+" as censored instead of treating 30 as the real value.
 - `Date` was logged as month/year only, so the dataset is monthly-resolution.
 - `Category`, `Platform` and `Brand` had case-inconsistent duplicates ("T-Shirt" vs "T-shirt", "GINZI" vs "Ginzi"), which I standardised.
 - "No Brand" and "Unknown" meant the same thing, so I merged them.
-- There were no missing values, and `Profit (£)` matched Sale − Purchase − Shipping − Fee exactly on every row.
+- There were no missing values, and `Profit (£)` matched Sale/Purchase/Shipping/Fee exactly on every row.
 - I added three ratio metrics: **margin %** (profit ÷ sale price), **ROI %** (profit ÷ purchase price) and **cost drag %** ((shipping + fees) ÷ sale price). One gifted item with a £0 purchase price is excluded from ROI averages only.
 - In the Power BI dashboard, I rebuilt the same cleaning steps in Power Query (M) instead of loading the cleaned output from Python.
 
